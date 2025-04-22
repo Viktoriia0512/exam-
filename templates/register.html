@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Register page </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h3>Register</h3>
+    <br>
+    <div>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class="flashed">
+            {% for message in messages %}
+            {{ message }}
+            {% endfor%}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+    <div>
+        <form method="POST" action="/register">
+            <label>Email</label><br>
+            <input type="email" name="email" placeholder="Your email" autofocus="" required><br>
+            <div class="password-container">
+                <input type="password" name="password" id="password" placeholder="Password" required minlength="8">
+                <button type="button" class="toggle-password" onclick="togglePassword('password', this)">🐵</button>
+            </div>
+            <br>
+            <button type="submit" value="submit" class="button">Register</button>
+        </form>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/validation.js') }}"></script>
+</body>
+
+</html>

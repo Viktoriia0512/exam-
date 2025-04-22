@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
+</head>
+<body>
+    <header>
+        <nav >
+            <div >
+                    
+                    <div class="login">
+                    <ul >
+                        <li class="login"><a href="/logout">Log out </a></li>
+                        <li class="login"><a href="/register">Register</a></li>
+                        <li class="login"><a href="/login">Log in</a></li>
+                    </ul>
+                    </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <aside>
+
+        <div class="main">
+            <ul>
+
+
+                <li class="main"><a href="/">Home page</a></li>
+                <li class="main"><a href="/liststudents">Show all students</a></li>
+                <li class="main"><a href="/enternew">Add new student</a></li>
+
+            </ul>
+        </div>
+    </aside>
+</body>
+</html>

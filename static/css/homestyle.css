@@ -1,0 +1,62 @@
+.main ul
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+
+
+.main li a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.main li a:hover {
+        background-color: #F2CE9D;
+    }
+
+
+.login ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+
+
+    .login li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+        .login li a:hover {
+            background-color: #F2CE9D;
+        }
+
+
+.login li {
+    display:inline;
+    float: right;
+}
+aside{
+    width:20%;
+    height:100%;
+    background-color:antiquewhite;
+}
+
+
+        
+
+
